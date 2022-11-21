@@ -8,7 +8,7 @@ import sys
 import argparse
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '../../'))
-from indi.knowledgelibrary.globus import Globus, Endpoint
+from indira.knowledgelibrary.globus import Globus, Endpoint
 
 
 class DTNConnector(object):

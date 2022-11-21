@@ -11,7 +11,7 @@ import sys
 
 import random
 import json
-import indi.knowledgelibrary
+import indira.knowledgelibrary
 import datetime
 from pytz import timezone
 from datetime import datetime
@@ -28,8 +28,7 @@ from rdflib.tools.rdf2dot import rdf2dot
 from graphviz import Digraph
 
 from pprint import pprint
-from indi.knowledgelibrary.oscars import get_endpoints
-#from indi.knowledgelibrary.dtns import get_site_onsa
+from indira.knowledgelibrary.oscars import get_endpoints
 
 import subprocess
 from subprocess import call
@@ -38,11 +37,11 @@ import time
 
 # read json files
 sys.path.append(os.path.join(os.path.dirname(__file__), '../../'))
-profilefile = "../../indi/knowledgelibrary/profiles.json"
-schemafilelink = "../../indi/knowledgelibrary/intentowlschema.json"
+profilefile = "../../indira/knowledgelibrary/profiles.json"
+schemafilelink = "../../indira/knowledgelibrary/intentowlschema.json"
 
-oscartopofile = "../../indi/knowledgelibrary/sitetopo.json"
-currentusefile = "../../indi/knowledgelibrary/currentusage.json"
+oscartopofile = "../../indira/knowledgelibrary/sitetopo.json"
+currentusefile = "../../indira/knowledgelibrary/currentusage.json"
 
 
 class ServiceDetail:

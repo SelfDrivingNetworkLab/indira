@@ -4,7 +4,7 @@
 
 import random
 import json
-import indi.knowledgelibrary
+import indira.knowledgelibrary
 from rdflib import ConjunctiveGraph, Namespace, exceptions
 
 from rdflib import URIRef, RDFS, RDF, BNode
@@ -16,7 +16,7 @@ from graphviz import Digraph
 
 from pprint import pprint
 
-schemafilelink= "../../indi/knowledgelibrary/intentowlschema.json"
+schemafilelink= "../../indira/knowledgelibrary/intentowlschema.json"
 
 # intentowldata = {
 #   "profile": [

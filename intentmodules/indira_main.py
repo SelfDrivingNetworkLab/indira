@@ -23,14 +23,14 @@ import curses.textpad
 import glob
 
 sys.path.append(os.path.join(os.path.dirname(__file__),'../../'))
-from indi.intentmodules.intentmanager import intentmanagermain
+import indira.intentmodules.intentmanager 
 
 
-from indi.knowledgelibrary.dtns import DTN
-from indi.knowledgelibrary.dtns import Site
-from indi.knowledgelibrary.globus import Globus
-from indi.knowledgelibrary.dtns import get_sites
-from indi.knowledgelibrary.dtns import get_dtn
+from indira.knowledgelibrary.dtns import DTN
+from indira.knowledgelibrary.dtns import Site
+from indira.knowledgelibrary.globus import Globus
+from indira.knowledgelibrary.dtns import get_sites
+from indira.knowledgelibrary.dtns import get_dtn
 import webbrowser
 
 global gold
@@ -273,20 +273,20 @@ def analyze(nwuser, statement,n_or_g):
               s=1
               #print "notfound in local dictionary"
           if currentfound==1:
-            print "INDIRA> I have found these provisions setup with following details:"
-            print "Endpoint1    Endpoint2    Start time    Stop time     Bandwidth     (Time Zone)"
-            print demosite1 + "\t" +demosite2+"\t"+nowstart+"\t"+nowstop+"\t"+nowbw+"\t"+nowzn
+            print("INDIRA> I have found these provisions setup with following details:")
+            print("Endpoint1    Endpoint2    Start time    Stop time     Bandwidth     (Time Zone)")
+            print(demosite1 + "\t" +demosite2+"\t"+nowstart+"\t"+nowstop+"\t"+nowbw+"\t"+nowzn)
          
             print("\n\n")
-            print "Do you want to use this provision? (Y/N)"
+            print("Do you want to use this provision? (Y/N)")
             g=raw_input(nwuser +"> ")
             if g=='Y' or g=='y':
-              print "\nINDIRA> Great! Ill setup the file transfer with this provision...."
+              print("\nINDIRA> Great! Ill setup the file transfer with this provision....")
 
               print("INDIRA> Tell me about source and destination file or folders. Hint: '/www.txt->/test'")
               statementtransfer = raw_input(nwuser +"> ")
 
-              print "Calling globus......"
+              print("Calling globus......")
 
               folderconnection=statementtransfer #re.compile("'.*?'").findall(statementtransfer)
                 #print pairs
@@ -315,8 +315,8 @@ def analyze(nwuser, statement,n_or_g):
                 #drawGlobusGraph(nwuser, s1_dtn.name, s2_dtn.name,firstpart, secondlink)
                 #print globuscall
                 #if 'True' in globuscall:
-                print "Successful transfer: Check Globus Task ID:"
-                print globuscall 
+                print("Successful transfer: Check Globus Task ID:")
+                print(globuscall)
                 return "done"
                 #python dtns.py --globus-transfer-nsi lbl lbl-diskpt1 /1M.dat cern cern-diskpt1 /test1
                 #(True, ' 9fa5f9f4-a6cb-11e6-9ad2-22000a1e3b52')
@@ -345,7 +345,7 @@ def analyze(nwuser, statement,n_or_g):
               #fullintent=fullintent+' using '+ statementgn
           else: # if current is false
             time.sleep(2)
-            print "\n\n\nINDIRA> OK.. I couldnt find any provisions for these endpoints. Let me set these up for you!"
+            print("\n\n\nINDIRA> OK.. I couldnt find any provisions for these endpoints. Let me set these up for you!")
             print("INDIRA> What conditions do you associate with this intent \n(hint: \t[condition bwnolimit isolated unfriendly])")
             statementcondition = raw_input(nwuser +"> ") 
             #print statementcondition
@@ -379,7 +379,7 @@ def analyze(nwuser, statement,n_or_g):
       #sites=sites.replace("'","")
       #screen.addstr("INDIRA> Ive recorded your intent!\n")
       flag_babble=0
-      return "FOR " + nwuser + " connect " + sites + " " + fullintent
+      return("FOR " + nwuser + " connect " + sites + " " + fullintent)
       whileflag=False
 
     
@@ -436,14 +436,14 @@ def start():
     screen.clear()
     screen.addstr("INDIRA> OK lets begin. Say 'help' or 'start again' if stuck\n")
     curses.endwin()
-    print "\n\n\n\n\n\n"
-    print "******************************************************************"
-    print "********************* INDIRA CHAT WINDOW ************************"
+    print("\n\n\n\n\n\n")
+    print("******************************************************************")
+    print("********************* INDIRA CHAT WINDOW ************************")
 
     try:
       conversation(nwusername)
     except:
-      print "Shutting down!"
+      print("Shutting down!")
 
  
 
@@ -472,10 +472,10 @@ def conversation(nwusernameg):
       nsiorglobus ="n"
       try:
         record=analyze(nwusernameg, statement.lower(), nsiorglobus)
-        print record
+        print(record)
 
         if 'FOR' in record:
-          print "INDIRA> Calling the intent engine now!"
+          print("INDIRA> Calling the intent engine now!")
           intentmanagermain(record)
           break
 
@@ -484,8 +484,8 @@ def conversation(nwusernameg):
 
 
       except: 
-        print "Unexpected Error in Indira:", sys.exc_info()[0]
-        print "Try Again!"
+        print("Unexpected Error in Indira:", sys.exc_info()[0])
+        print("Try Again!")
 
       
       #if 'done' in record:
@@ -510,14 +510,14 @@ def conversation(nwusernameg):
       #   intentmanagermain(gtransfer)
       #   ### write a shell script to run at time     
 
-    print ("INDIRA> you can view the details of intent rendered here: ")
+    print("INDIRA> you can view the details of intent rendered here: ")
     filename = '../templates/' + 'indira-gui-outputs.html'
 
-    print filename
+    print(filename)
     #webbrowser.open_new_tab(filename)
 
    
-    print "\nINDIRA> Do you have any more provisions needed? (Y/N)"
+    print("\nINDIRA> Do you have any more provisions needed? (Y/N)")
       
     yok=raw_input("> ")
 
@@ -525,17 +525,17 @@ def conversation(nwusernameg):
     if yok=='Y' or yok=='y':
       conversation(nwusernameg)
     else:    
-      print "INDIRA> OK.. im exiting "
+      print("INDIRA> OK.. im exiting ")
     choice ='n'
     if choice == "N" or choice =="n":
-      print ("INDIRA> Okay, bye bye...")
+      print("INDIRA> Okay, bye bye...")
     
 
 
 def globusconversation(nwusername):
   flag_babble=0
   fullintent=''
-  print "printing all active endpints to choose from ANL#ep1 BNL#ep2"
+  print("printing all active endpints to choose from ANL#ep1 BNL#ep2")
   statement=raw_input(nwusername +">")
 
   if 'endpoint=' in statement.lower() or 'endpoints=' in statement.lower() or 'endpoints =' in statement.lower() or 'endpoint =' in statement.lower():
@@ -543,7 +543,7 @@ def globusconversation(nwusername):
 
         #print endpointsstring
         endpointsstring1=re.compile("'.*?'").findall(statement)
-        print endpointsstring1
+        print(endpointsstring1)
 
         print("INDIRA> Tell me about the traffic direction \n(hint: \t[Pairs = 'All'] for bidirectional links, or \n\t[Pairs = 'sitename1->sitename2' 'sitename2->sitename3'])")
         statementpairs = raw_input(nwusername +"> ") 
@@ -591,16 +591,16 @@ def globusconversation(nwusername):
 
         statementtime =statementtime.replace('stop', 'schedulestop')
         
-        print statementtime
+        print(statementtime)
         fullintent=fullintent+ " " + statementtime
 
         print("INDIRA> I will provision you links, using 'NSI', now!")
         #statementgn = raw_input(nwuser +"> ") 
-        print "Intent is collected!"
+        print("Intent is collected!")
         sites= " ".join(endpointsstring1)
         sites=sites.replace("'","")
-        print "INDIRA> Ive recorded your intent!"
-        return "FOR " + nwusername + " connect " + sites + " " + fullintent
+        print("INDIRA> Ive recorded your intent!")
+        return("FOR " + nwusername + " connect " + sites + " " + fullintent)
 
         whileflag=False
 

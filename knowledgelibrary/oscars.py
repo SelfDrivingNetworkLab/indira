@@ -15,8 +15,8 @@ import ssl
 import sys
 
 sys.path.append(os.path.join(os.path.dirname(__file__),'../../'))
-from indi.profile.profile import get_profile
-oscartopofile="../../indi/knowledgelibrary/sitetopo.json"
+from indira.profile.profile import get_profile
+oscartopofile="../../indira/knowledgelibrary/sitetopo.json"
 
 
 def get_sites(file):

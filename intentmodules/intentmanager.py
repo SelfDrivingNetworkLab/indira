@@ -5,6 +5,9 @@
 # 3) main function - calls above fn, calls intent engine to check schema and correct terms used
 # 3b) once verified will call the intent renderer
 # 4) takes the output of renderer and calls oscars/nsi client
+#!/usr/bin/env python
+
+
 import re
 import os
 import sys
@@ -18,16 +21,16 @@ from rdflib.namespace import DC, FOAF
 from rdflib.tools.rdf2dot import rdf2dot
 from graphviz import Digraph
 
-sys.path.append(os.path.join(os.path.dirname(__file__), '../../'))
-from indi.knowledgelibrary.intentengine import parseintent
-from indi.knowledgelibrary.intentengine import checkwithschema
-from indi.intentmodules.intentrenderer import renderermain
+#sys.path.append(os.path.join(os.path.dirname(__file__), '../../'))
+from indira.knowledgelibrary.intentengine import parseintent
+from indira.knowledgelibrary.intentengine import checkwithschema
+from indira.intentmodules.intentrenderer import renderermain
 
-from indi.knowledgelibrary.dtns import DTN
-from indi.knowledgelibrary.dtns import Site
-from indi.knowledgelibrary.globus import Globus
-from indi.knowledgelibrary.dtns import get_sites
-from indi.knowledgelibrary.dtns import get_dtn
+from indira.knowledgelibrary.dtns import DTN
+from indira.knowledgelibrary.dtns import Site
+from indira.knowledgelibrary.globus import Globus
+from indira.knowledgelibrary.dtns import get_sites
+from indira.knowledgelibrary.dtns import get_dtn
 
 filerenderpath = "../static/"
 
