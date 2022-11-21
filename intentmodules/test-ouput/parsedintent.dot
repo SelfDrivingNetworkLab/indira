@@ -1,0 +1,12 @@
+// Parsed Intent
+digraph {
+	CONNECT [label=CONNECT]
+	"'lbl'" [label="'lbl'"]
+		CONNECT -> "'lbl'" [label="ex:hasArguments" constraint=false]
+	CONNECT [label=CONNECT]
+	"'anl'" [label="'anl'"]
+		CONNECT -> "'anl'" [label="ex:hasArguments" constraint=false]
+	"['mariam']" [label="['mariam']"]
+	CONNECT [label=CONNECT]
+		"['mariam']" -> CONNECT [label="ex:hasService" constraint=false]
+}

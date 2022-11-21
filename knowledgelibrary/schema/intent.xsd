@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:simpleType name="opstring">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value ="EQ"/>
+			<xs:enumeration value ="NEQ"/>
+			<xs:enumeration value ="LEQ"/>
+		</xs:restriction>		
+	</xs:simpleType>
+
+	<xs:element name="intent">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="profile" type="xs:string" minOccurs="0" /> <!--possible to have no profile-->
+								
+				<xs:element name="global" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+      						<xs:element name="name" type="xs:string"/>
+     						<xs:element name="value" type="xs:string"/>
+     					</xs:sequence>
+  					</xs:complexType>
+				</xs:element>
+
+				<xs:element name="service" minOccurs ="1"> <!--can we ask for more services?-->
+					<xs:complexType>
+						<xs:sequence>
+      						<xs:element name="name" type="xs:string"/>
+     						<xs:element name="endpoints">
+     							<xs:complexType>
+									<xs:sequence>
+      									<xs:element name="endpoint" type="xs:string" minOccurs="2" maxOccurs="unbounded"/>
+     								</xs:sequence>
+  								</xs:complexType>
+							</xs:element>
+     					</xs:sequence>
+  					</xs:complexType>
+				</xs:element>
+
+				<xs:element name="conditions" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+
+      						<xs:element name="servicecondition" maxOccurs="unbounded"> <!--multiple service conditions-->
+								<xs:complexType>
+									<xs:sequence>
+      									<xs:element name="name" type="xs:string"/>
+      									<xs:element name="description" type="xs:string"/>
+      										<xs:element name="operation">
+												<xs:complexType>
+													<xs:sequence>
+      													<xs:element name="operand" type="xs:opstring"/>
+      													<xs:element name="value" type="xs:string"/>
+     												</xs:sequence>
+  												</xs:complexType>
+											</xs:element>
+     								</xs:sequence>
+  								</xs:complexType>
+							</xs:element>
+
+
+							<xs:element name="timecondition" minOccurs="0" maxOccurs="1">
+								<xs:complexType>
+									<xs:sequence>
+      									<xs:element name="name" type="xs:string"/>
+      									<xs:element name="start" type="xs:string"/>
+      									<xs:element name="stop" type="xs:string"/>
+      									<xs:element name="deadline" type="xs:string"/>
+      									<xs:element name="duration" type="xs:string"/>									
+     								</xs:sequence>
+  								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+  					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+ 			<xs:attribute name="id" type="xs:string" use="required"/>
+  		</xs:complexType>
+	</xs:element>
+</xs:schema>
+
+			

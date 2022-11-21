@@ -1,0 +1,1256 @@
+{
+  "data": {
+    "networkEntities": [
+      {
+        "shortName": "ames",
+        "fullName": "Ames Laboratory",
+        "interfaces": [
+          {
+            "device": "ameslab-rt3",
+            "interface": "xe-0/1/0.920",
+            "description": "ameslab-rt3->ames(as2640):10ge(vlan):site_conn-a_v4:show:intercloud"
+          },
+          {
+            "device": "ameslab-rt3",
+            "interface": "xe-0/1/0.922",
+            "description": "ameslab-rt3->ames(as2640):10ge(vlan):site_conn-a_v6:show:intercloud"
+          },
+          {
+            "device": "ameslab-rt3",
+            "interface": "xe-1/3/0.902",
+            "description": "ameslab-rt3->ames(as2640):10ge(vlan):site_conn-b_v4:show:intercloud"
+          },
+          {
+            "device": "ameslab-rt3",
+            "interface": "xe-1/3/0.912",
+            "description": "ameslab-rt3->ames(as2640):10ge(vlan):site_conn-b_v6:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "anl",
+        "fullName": "Argonne National Laboratory",
+        "interfaces": [
+          {
+            "device": "anl-mr2",
+            "interface": "xe-0/2/0.1811",
+            "description": "anl-mr2->anl(as683):10ge:sdn-a:show:intercloud"
+          },
+          {
+            "device": "anl-mr2",
+            "interface": "xe-8/1/0.1830",
+            "description": "anl-mr2->anl(as683):10ge(vlan):site-ex_ip-c:show:intercloud"
+          },
+          {
+            "device": "anl-mr2",
+            "interface": "xe-8/1/0.1831",
+            "description": "anl-mr2->anl(as683):10ge(vlan):site-ex-v6_ip-c:show:intercloud"
+          },
+          {
+            "device": "fnal-mr2",
+            "interface": "xe-2/3/0.1800",
+            "description": "fnal-mr2->anl(as683):fe:site-ex:show:intercloud"
+          },
+          {
+            "device": "star-cr5",
+            "interface": "6014-1_2_1-1819",
+            "description": "[PRODUCTION CIRCUIT] ANL ALCF - FNAL Data Archive"
+          },
+          {
+            "device": "star-cr5",
+            "interface": "6132-1_2_1-1814",
+            "description": "[PRODUCTION CIRCUIT] MREN-ANL-UCHIC-1814-40G"
+          },
+          {
+            "device": "star-cr5",
+            "interface": "to_anl_ip-a_v4",
+            "description": "star-cr5->anl(as683):100ge:site-ex:show:intercloud"
+          },
+          {
+            "device": "star-cr5",
+            "interface": "to_anl_ip-a_v6",
+            "description": "star-cr5->anl(as683):100ge:site-ex-v6:show:intercloud"
+          },
+          {
+            "device": "star-cr5",
+            "interface": "to_anl_ip-b_v4",
+            "description": "star-cr5->anl(as683):100ge:site_conn-b_secondary_v4:show:intercloud"
+          },
+          {
+            "device": "star-cr5",
+            "interface": "to_anl_ip-b_v6",
+            "description": "star-cr5->anl(as683):100ge:site_conn-b_secondary_v6:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "bnl",
+        "fullName": "Brookhaven National Laboratory",
+        "interfaces": [
+          {
+            "device": "aofa-cr5",
+            "interface": "111-4_2_1-3900",
+            "description": "aofa-cr5->bnl(as43):100ge:site_conn-l_v4_vrf-lhcone:show:intercloud"
+          },
+          {
+            "device": "aofa-cr5",
+            "interface": "6044-4_2_1-3524",
+            "description": "[PRODUCTION CIRCUIT] BNL Primary LHCOPN"
+          },
+          {
+            "device": "aofa-cr5",
+            "interface": "6064-4_2_1-2623",
+            "description": "[PRODUCTION CIRCUIT] BNL ATLAS to UOC via production core"
+          },
+          {
+            "device": "aofa-cr5",
+            "interface": "6086-4_2_1-2500",
+            "description": "[PRODUCTION CIRCUIT] BNL AWS service"
+          },
+          {
+            "device": "newy-cr5",
+            "interface": "111-3_1_1-2200",
+            "description": "newy-cr5->bnl(as43):10ge:site_conn-j_v4_vrf-lhcone:show:intercloud"
+          },
+          {
+            "device": "newy-cr5",
+            "interface": "6034-3_1_1-3513",
+            "description": "[PRODUCTION CIRCUIT] BNL Secondary LHCOPN"
+          },
+          {
+            "device": "newy-cr5",
+            "interface": "6072-3_1_1-3514",
+            "description": "[PRODUCTION CIRCUIT] BNL Tertiary LHCOPN"
+          }
+        ]
+      },
+      {
+        "shortName": "cern",
+        "fullName": "European Organization for Nuclear Research",
+        "interfaces": [
+          {
+            "device": "cern-272-cr5",
+            "interface": "6004-1_2_1-3500",
+            "description": "[PRODUCTION CIRCUIT] FNAL Primary LHCOPN"
+          },
+          {
+            "device": "cern-272-cr5",
+            "interface": "6034-1_2_1-3513",
+            "description": "[PRODUCTION CIRCUIT] BNL Secondary LHCOPN"
+          },
+          {
+            "device": "cern-272-cr5",
+            "interface": "6058-lag-1-119",
+            "description": "[PRODUCTION CIRCUIT] CERN - MREN, VLAN 119, 1M"
+          },
+          {
+            "device": "cern-272-cr5",
+            "interface": "6061-1_2_1-3501",
+            "description": "[PRODUCTION CIRCUIT] FNAL Tertiary LHCOPN"
+          },
+          {
+            "device": "cern-272-cr5",
+            "interface": "6072-1_2_1-3514",
+            "description": "[PRODUCTION CIRCUIT] BNL Tertiary LHCOPN"
+          },
+          {
+            "device": "cern-272-cr5",
+            "interface": "6079-lag-1-120",
+            "description": "[PRODUCTION CIRCUIT] CERN - Starlight, VLAN 120, 1M"
+          },
+          {
+            "device": "cern-272-cr5",
+            "interface": "6088-lag-1-121",
+            "description": "[PRODUCTION CIRCUIT] CERN - Internet2, VLAN 121, 1M"
+          },
+          {
+            "device": "cern-272-cr5",
+            "interface": "6090-lag-1-224",
+            "description": "[PRODUCTION CIRCUIT] CERN - NASA NISN, VLAN 224, 200M"
+          },
+          {
+            "device": "cern-272-cr5",
+            "interface": "6100-lag-1-136",
+            "description": "[PRODUCTION CIRCUIT] CERN - Canarie Winnipeg, VLAN 136, 1M"
+          },
+          {
+            "device": "cern-272-cr5",
+            "interface": "6103-lag-1-141",
+            "description": "[PRODUCTION CIRCUIT] CERN - Canarie Toronto, VLAN 141, 1M"
+          },
+          {
+            "device": "cern-272-cr5",
+            "interface": "6105-lag-1-160",
+            "description": "[PRODUCTION CIRCUIT] CERN - ASGC, VLAN 160, 1M"
+          },
+          {
+            "device": "cern-272-cr5",
+            "interface": "6107-lag-1-258",
+            "description": "[PRODUCTION CIRCUIT] CERN - Internet2 IPv6, VLAN 258, 1M"
+          },
+          {
+            "device": "cern-272-cr5",
+            "interface": "6109-lag-1-265",
+            "description": "[PRODUCTION CIRCUIT] CERN - KREOnet, VLAN 265, 1M"
+          },
+          {
+            "device": "cern-272-cr5",
+            "interface": "6111-lag-1-266",
+            "description": "[PRODUCTION CIRCUIT] CERN - KREOnet IPv6, VLAN 266, 1M"
+          },
+          {
+            "device": "cern-272-cr5",
+            "interface": "6113-lag-1-294",
+            "description": "[PRODUCTION CIRCUIT] CERN - UW-Madison, VLAN 294, 1M"
+          },
+          {
+            "device": "cern-272-cr5",
+            "interface": "6115-1_2_1-3526",
+            "description": "[PRODUCTION CIRCUIT] CERN - ASGC LHCOPN backup, VLAN 3526, 1M"
+          },
+          {
+            "device": "cern-272-cr5",
+            "interface": "to_cern_ip-a",
+            "description": "cern-272-cr5->cern(as513):agg-10ge:site_conn-h:show:intercloud"
+          },
+          {
+            "device": "cern-513-cr5",
+            "interface": "6012-3_1_1-3506",
+            "description": "[PRODUCTION CIRCUIT] FNAL Secondary LHCOPN"
+          },
+          {
+            "device": "cern-513-cr5",
+            "interface": "6044-3_1_1-3524",
+            "description": "[PRODUCTION CIRCUIT] BNL Primary LHCOPN"
+          },
+          {
+            "device": "cern-513-cr5",
+            "interface": "6056-3_1_1-2499",
+            "description": "[PRODUCTION CIRCUIT] FNAL - TIFR, VLAN 2499, 1M"
+          },
+          {
+            "device": "cern-513-cr5",
+            "interface": "6093-lag-1-2027",
+            "description": "[PRODUCTION CIRCUIT] CalTech PacWave to CERN HEP Circuit"
+          },
+          {
+            "device": "cern-513-cr5",
+            "interface": "to_cern_ip-a",
+            "description": "cern-513-cr5->cern(as513):agg-10ge:site_conn-g:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "doe-albq",
+        "fullName": "DOE-ALBQ (Sandia) ",
+        "interfaces": [
+          {
+            "device": "snla-rt3",
+            "interface": "ge-1/1/3.0",
+            "description": "snla-rt3->doealbq:ge:securenet:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "doe-forrestal",
+        "fullName": "DOE Forrestal",
+        "interfaces": [
+          {
+            "device": "forr-rt1",
+            "interface": "ge-0/2/3.900",
+            "description": "forr-rt1->forrestal:ge(vlan):site-ex:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "doe-gtn",
+        "fullName": "DOE Germantown",
+        "interfaces": [
+          {
+            "device": "doe-gtn-rt2",
+            "interface": "ge-0/0/1.0",
+            "description": "doe-gtn-rt2->doe-gtn:1ge:site_conn-a_v4:show:intercloud"
+          },
+          {
+            "device": "doe-gtn-rt2",
+            "interface": "ge-0/1/3.1820",
+            "description": "doe-gtn-rt2->doe-gtn:1ge(vlan):site_conn-b_v4_scitvpn:show:intercloud"
+          },
+          {
+            "device": "doe-gtn-rt2",
+            "interface": "ge-0/1/3.1821",
+            "description": "doe-gtn-rt2->doe-gtn:1ge(vlan):site_conn-b_v6_scitvpn:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "doe-in",
+        "fullName": "DOE Office of Intelligence and Counterintelligence",
+        "interfaces": [
+          {
+            "device": "denv-cr5",
+            "interface": "to_doe-in-rmr",
+            "description": "denv-cr5->doe-rmro:1ge:site_conn-a_v4:show:intercloud"
+          },
+          {
+            "device": "doe-gtn-rt2",
+            "interface": "ge-0/1/1.0",
+            "description": "doe-gtn-rt2->doe-nnsa:fe:site_conn-a_v4:show:intercloud"
+          },
+          {
+            "device": "eqx-ash-rt1",
+            "interface": "ge-0/1/2.1000",
+            "description": "eqx-ash-rt1->doe-in:1g(vlan):l2vpn-doe-in:hide:intercloud"
+          },
+          {
+            "device": "forr-rt2",
+            "interface": "ge-0/0/4.1000",
+            "description": "forr-rt2->doe-forrestal:1ge(vlan):site_conn-b_l2vpn-doe-in:hide:intercloud"
+          },
+          {
+            "device": "forr-rt2",
+            "interface": "ge-0/0/4.900",
+            "description": "forr-rt2->doe-forrestal:1ge(vlan):site_conn-b_v4:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "doe-nnsa",
+        "fullName": "DOE NNSA",
+        "interfaces": [
+          {
+            "device": "doe-gtn-rt2",
+            "interface": "ge-0/1/1.0",
+            "description": "doe-gtn-rt2->doe-nnsa:fe:site_conn-a_v4:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "ettp",
+        "fullName": "East Tennessee Technology Park",
+        "interfaces": [
+          {
+            "device": "ornl-rt4",
+            "interface": "xe-2/3/0.2110",
+            "description": "ornl-rt4->ettp:ge(vlan):site-ex:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "fnal",
+        "fullName": "Fermilab",
+        "interfaces": [
+          {
+            "device": "anl-mr2",
+            "interface": "xe-7/3/0.1805",
+            "description": "anl-mr2->fnal(as3152):ge:site-ex:show:intercloud"
+          },
+          {
+            "device": "chic-cr5",
+            "interface": "6021-3_2_1-200",
+            "description": "[PRODUCTION CIRCUIT] FNAL- UMN-Soudan-A VLAN 200"
+          },
+          {
+            "device": "chic-cr5",
+            "interface": "6026-3_2_1-201",
+            "description": "[PRODUCTION CIRCUIT] FNAL- UMN-NOVA-A VLAN 201"
+          },
+          {
+            "device": "chic-cr5",
+            "interface": "6061-3_2_1-3501",
+            "description": "[PRODUCTION CIRCUIT] FNAL Tertiary LHCOPN"
+          },
+          {
+            "device": "chic-cr5",
+            "interface": "6135-3_2_1-2150",
+            "description": "[PRODUCTION CIRCUIT] FNAL-ORNL SDN Collaboration"
+          },
+          {
+            "device": "fnal-mr2",
+            "interface": "ae0.0",
+            "description": "fnal-mr2->fnal(as3152):agg-10ge:site-ex:show:intercloud"
+          },
+          {
+            "device": "fnal-mr2",
+            "interface": "xe-1/2/0.0",
+            "description": "fnal-mr2->fnal(as3152):10ge:sdn-b:show:intercloud"
+          },
+          {
+            "device": "fnal-mr2",
+            "interface": "xe-8/0/0.633",
+            "description": "[PRODUCTION CIRCUIT] FNAL - DUKE, VLAN 633, 1G"
+          },
+          {
+            "device": "fnal-mr3",
+            "interface": "xe-1/1/0.0",
+            "description": "fnal-mr3->fnal(as3152):10ge:site-ex:show:intercloud"
+          },
+          {
+            "device": "fnal-mr3",
+            "interface": "xe-2/3/0.1836",
+            "description": "fnal-mr3->fnal(as3152):ge(vlan):site-ex-ipv6:show:intercloud"
+          },
+          {
+            "device": "star-cr5",
+            "interface": "111-2_2_1-2201",
+            "description": "star-cr5->fnal(as3152):100ge:site_conn-l_v4_vrf-lhcone:show:intercloud"
+          },
+          {
+            "device": "star-cr5",
+            "interface": "6004-2_2_1-3500",
+            "description": "[PRODUCTION CIRCUIT] FNAL Primary LHCOPN"
+          },
+          {
+            "device": "star-cr5",
+            "interface": "6012-2_2_1-3506",
+            "description": "[PRODUCTION CIRCUIT] FNAL Secondary LHCOPN"
+          },
+          {
+            "device": "star-cr5",
+            "interface": "6014-2_2_1-1819",
+            "description": "[PRODUCTION CIRCUIT] ANL ALCF - FNAL Data Archive"
+          },
+          {
+            "device": "star-cr5",
+            "interface": "6023-2_2_1-3120",
+            "description": "[PRODUCTION CIRCUIT] FNAL - ASGC, VLAN 3120, 1G"
+          },
+          {
+            "device": "star-cr5",
+            "interface": "6028-2_2_1-202",
+            "description": "[PRODUCTION CIRCUIT] FNAL- UMN-Soudan-B VLAN 202"
+          },
+          {
+            "device": "star-cr5",
+            "interface": "6032-2_2_1-203",
+            "description": "[PRODUCTION CIRCUIT] FNAL- UMN-NOVA-B VLAN 203"
+          },
+          {
+            "device": "star-cr5",
+            "interface": "6033-2_2_1-3021",
+            "description": "[PRODUCTION CIRCUIT] FNAL - UCSD, VLAN 3021, 1G"
+          },
+          {
+            "device": "star-cr5",
+            "interface": "6051-2_2_1-1869",
+            "description": "[PRODUCTION CIRCUIT] FNAL - UWISC via OmniPOP, VLAN 1869, 1G"
+          },
+          {
+            "device": "star-cr5",
+            "interface": "6053-2_2_1-2549",
+            "description": "[PRODUCTION CIRCUIT] FNAL - PURDUE, VLAN 2549, 1G"
+          },
+          {
+            "device": "star-cr5",
+            "interface": "6056-2_2_1-2499",
+            "description": "[PRODUCTION CIRCUIT] FNAL - TIFR, VLAN 2499, 1M"
+          },
+          {
+            "device": "star-cr5",
+            "interface": "6060-2_2_1-1999",
+            "description": "[PRODUCTION CIRCUIT] FNAL - UFL, VLAN 1999, 10G"
+          },
+          {
+            "device": "star-cr5",
+            "interface": "6065-2_2_1-1501",
+            "description": "[PRODUCTION CIRCUIT] FNAL - CNAF, VLAN 1501, 1Mbps"
+          },
+          {
+            "device": "star-cr5",
+            "interface": "6069-2_2_1-3020",
+            "description": "[PRODUCTION CIRCUIT] FNAL - Prague, VLAN 3020, 1Mbps"
+          },
+          {
+            "device": "star-cr5",
+            "interface": "6070-2_2_1-1304",
+            "description": "[PRODUCTION CIRCUIT] FNAL - UFL (via AL2S CHIC), VLAN 1304, 1G"
+          },
+          {
+            "device": "star-cr5",
+            "interface": "6074-2_2_1-2613",
+            "description": "[PRODUCTION CIRCUIT] FNAL - SARA/DEKIT, VLAN 2613, 1M"
+          },
+          {
+            "device": "star-cr5",
+            "interface": "6075-2_2_1-369",
+            "description": "[PRODUCTION CIRCUIT] FNAL - UWISC, VLAN 369, 1G"
+          },
+          {
+            "device": "star-cr5",
+            "interface": "6080-2_2_1-3503",
+            "description": "[PRODUCTION CIRCUIT] FNAL - UCSD, VLAN 3503, 1G"
+          },
+          {
+            "device": "star-cr5",
+            "interface": "6091-2_2_1-3001",
+            "description": "[PRODUCTION CIRCUIT] FNAL - MIT, VLAN 3001, 1G"
+          }
+        ]
+      },
+      {
+        "shortName": "ga",
+        "fullName": "General Atomics",
+        "interfaces": [
+          {
+            "device": "ga-rt2",
+            "interface": "ge-1/0/5.1301",
+            "description": "ga-rt2->ga(as3431):1ge(vlan):site_conn-c_v4_1g-science-dmz:show:intercloud"
+          },
+          {
+            "device": "ga-rt2",
+            "interface": "ge-1/0/5.1311",
+            "description": "ga-rt2->ga(as3431):1ge(vlan):site_conn-c_v6_1g-science-dmz:show:intercloud"
+          },
+          {
+            "device": "ga-rt2",
+            "interface": "xe-0/1/0.0",
+            "description": "ga-rt2->ga(as3431):10ge:site_conn-a_v4:show:intercloud"
+          },
+          {
+            "device": "ga-rt2",
+            "interface": "xe-0/2/0.1302",
+            "description": "ga-rt2->ga(as3431):10ge(vlan):site_conn-b_v4_10g-science-dmz:show:intercloud"
+          },
+          {
+            "device": "ga-rt2",
+            "interface": "xe-0/2/0.1312",
+            "description": "ga-rt2->ga(as3431):10ge(vlan):site_conn-b_v6_10g-science-dmz:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "iarc",
+        "fullName": "NNSA Information Assurance Response Center",
+        "interfaces": [
+          {
+            "device": "lasv-rt1",
+            "interface": "ge-1/1/3.0",
+            "description": "lasv-rt1->iarc(as36288):ge:site-ex:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "inl",
+        "fullName": "Idaho National Laboratory",
+        "interfaces": [
+          {
+            "device": "bois-cr1",
+            "interface": "xe-1/2/0.4048",
+            "description": "[PRODUCTION CIRCUIT] INL to IRON  VL4048"
+          },
+          {
+            "device": "bois-cr1",
+            "interface": "xe-1/2/0.4049",
+            "description": "[PRODUCTION CIRCUIT] INL to IRON VL4049"
+          },
+          {
+            "device": "bois-cr1",
+            "interface": "xe-1/2/0.4050",
+            "description": "[PRODUCTION CIRCUIT] INL to IRON VL4050"
+          },
+          {
+            "device": "bois-cr1",
+            "interface": "xe-1/2/0.4051",
+            "description": "[PRODUCTION CIRCUIT] INL to IRON VL4051"
+          },
+          {
+            "device": "bois-cr1",
+            "interface": "xe-7/0/0.1504",
+            "description": "bois-cr1->inl(as10702):10ge(vlan):site-ex:show:intercloud"
+          },
+          {
+            "device": "bois-cr1",
+            "interface": "xe-7/0/0.1506",
+            "description": "bois-cr1->inl(as10702):10ge(vlan):site-ex-v6:show:intercloud"
+          },
+          {
+            "device": "bois-cr1",
+            "interface": "xe-7/0/0.4048",
+            "description": "[PRODUCTION CIRCUIT] INL to IRON  VL4048"
+          },
+          {
+            "device": "bois-cr1",
+            "interface": "xe-7/0/0.4049",
+            "description": "[PRODUCTION CIRCUIT] INL to IRON VL4049"
+          },
+          {
+            "device": "bois-cr1",
+            "interface": "xe-7/0/0.4050",
+            "description": "[PRODUCTION CIRCUIT] INL to IRON VL4050"
+          },
+          {
+            "device": "bois-cr1",
+            "interface": "xe-7/0/0.4051",
+            "description": "[PRODUCTION CIRCUIT] INL to IRON VL4051"
+          }
+        ]
+      },
+      {
+        "shortName": "jgi",
+        "fullName": "Joint Genome Institute",
+        "interfaces": [
+          {
+            "device": "jgi-mr2",
+            "interface": "xe-1/2/0.0",
+            "description": "jgi-mr2->jgi-site:10ge:site:show:intercloud"
+          },
+          {
+            "device": "jgi-mr2",
+            "interface": "xe-2/1/0.116",
+            "description": "[PRODUCTION CIRCUIT] LBL - JGI, VLAN 116, 9G"
+          },
+          {
+            "device": "lbl-mr2",
+            "interface": "xe-2/2/0.516",
+            "description": "[PRODUCTION CIRCUIT] JGI - LBL, VLAN 516, 9Gbps"
+          }
+        ]
+      },
+      {
+        "shortName": "jlab",
+        "fullName": "Thomas Jefferson National Accelerator Lab",
+        "interfaces": [
+          {
+            "device": "atla-cr5",
+            "interface": "to_jlab_ip-c-v4",
+            "description": "atla-cr5->jlab(as6406):10ge(vlan):site_conn-c:show:intercloud"
+          },
+          {
+            "device": "atla-cr5",
+            "interface": "to_jlab_ip-c-v6",
+            "description": "atla-cr5->jlab(as6406):10ge(vlan):site_conn-c:show:intercloud"
+          },
+          {
+            "device": "wash-cr5",
+            "interface": "to_jlab_ip-b-v4",
+            "description": "wash-cr5->jlab(as6406):100ge(vlan):site_conn-b_v4:show:intercloud"
+          },
+          {
+            "device": "wash-cr5",
+            "interface": "to_jlab_ip-b-v6",
+            "description": "wash-cr5->jlab(as6406):100ge(vlan):site_conn-b_v6:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "kcp",
+        "fullName": "Kansas City Plant",
+        "interfaces": [
+          {
+            "device": "kans-cr5",
+            "interface": "to_kcp_ip-a",
+            "description": "kans-cr5->kcp(as3424):ge:site-ex_botts:show:na"
+          },
+          {
+            "device": "kans-cr5",
+            "interface": "to_kcp_ip-b",
+            "description": "kans-cr5->kcp(as3424):ge:site-ex:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "kcp-albq",
+        "fullName": "KCP Albuquerque",
+        "interfaces": [
+          {
+            "device": "albq-cr5",
+            "interface": "to_kirtland_ip-a",
+            "description": "albq-cr5->kcp-albq:ge(vlan):site-ex:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "lanl",
+        "fullName": "Los Alamos National Laboratory",
+        "interfaces": [
+          {
+            "device": "albq-cr5",
+            "interface": "to_lanl_ip-a",
+            "description": "albq-cr5->lanl(as68):10ge(p2p):site-ex:show:intercloud"
+          },
+          {
+            "device": "llnl-mr2",
+            "interface": "ge-3/1/5.1140",
+            "description": "llnl-mr2->lanl-discom:1ge:discom-site-ex:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "lanl-dc",
+        "fullName": "Los Alamos National Lab DC Field Office",
+        "interfaces": [
+          {
+            "device": "llnldc-rt3",
+            "interface": "ge-0/2/0.0",
+            "description": "llnldc-rt3->lanldc:ge:site-ex:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "lbl",
+        "fullName": "Lawrence Berkeley National Lab",
+        "interfaces": [
+          {
+            "device": "lbl-mr2",
+            "interface": "xe-2/0/0.516",
+            "description": "[PRODUCTION CIRCUIT] JGI - LBL, VLAN 516, 9Gbps"
+          },
+          {
+            "device": "sunn-cr5",
+            "interface": "6042-7_1_1-116",
+            "description": "[PRODUCTION CIRCUIT] LBL - JGI, VLAN 116, 9G"
+          },
+          {
+            "device": "sunn-cr5",
+            "interface": "to_lbl_ip-a",
+            "description": "sunn-cr5->lbl(as16):100ge(p2p):site-ex:show:intercloud"
+          },
+          {
+            "device": "sunn-cr5",
+            "interface": "to_lbl_ipv6-a",
+            "description": "sunn-cr5->lbl(as16):100ge(p2p):site-ex-v6:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "ligo",
+        "fullName": "LIGO Hanford Washington Observatory",
+        "interfaces": [
+          {
+            "device": "pnwg-cr5",
+            "interface": "to_ligo-backup_ip-a-v4",
+            "description": "pnwg-cr5->ligo-backup:fe(vlan):site-ex:show:intercloud"
+          },
+          {
+            "device": "pnwg-cr5",
+            "interface": "to_ligo_ip-a-v4",
+            "description": "pnwg-cr5->ligo:10ge(vlan):site-ex:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "llnl",
+        "fullName": "Lawrence Livermore National Laboratory",
+        "interfaces": [
+          {
+            "device": "albu-cr1",
+            "interface": "xe-4/1/0.1141",
+            "description": "albu-cr1->llnl-backup(as45):discom:site-ex:show:intercloud"
+          },
+          {
+            "device": "llnl-mr2",
+            "interface": "ge-3/0/5",
+            "description": "llnl-mr2->llnlawsvpn:1ge:site_conn-a_v4:show:test"
+          },
+          {
+            "device": "llnl-mr2",
+            "interface": "xe-0/0/0.154",
+            "description": "llnl-mr2->llnl(as45):10ge:site_conn-c_primary_v4:show:intercloud"
+          },
+          {
+            "device": "llnl-mr2",
+            "interface": "xe-0/0/0.156",
+            "description": "llnl-mr2->llnl(as45):10ge:site_conn-c_primary_v6:show:intercloud"
+          },
+          {
+            "device": "llnl-mr2",
+            "interface": "xe-1/0/0.164",
+            "description": "llnl-mr2->llnl(as45):10ge:site_conn-d_secondary_v4:show:intercloud"
+          },
+          {
+            "device": "llnl-mr2",
+            "interface": "xe-1/0/0.166",
+            "description": "llnl-mr2->llnl(as45):10ge:site_conn-d_secondary_v6:show:intercloud"
+          },
+          {
+            "device": "llnl-mr2",
+            "interface": "xe-1/2/0.1150",
+            "description": "[PRODUCTION CIRCUIT] LLNL LVOC-UoChicago, VLAN 1150, 1G"
+          },
+          {
+            "device": "llnl-mr2",
+            "interface": "xe-2/1/0.44",
+            "description": "llnl-mr2->llnl-gdo(as44):10ge(vlan):site-ex:show:intercloud"
+          },
+          {
+            "device": "llnl-mr2",
+            "interface": "xe-2/1/0.46",
+            "description": "llnl-mr2->llnl-gdo(as44):10ge(vlan):site-ex-v6:show:intercloud"
+          },
+          {
+            "device": "snll-mr2",
+            "interface": "xe-0/2/0.1120",
+            "description": "snll-mr2->llnl-backup(as45):ge:site-ex:show:intercloud"
+          },
+          {
+            "device": "sunn-cr5",
+            "interface": "to_llnl_ip-a",
+            "description": "sunn-cr5->llnl(as44):100ge(vlan):site_conn-a_v4:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "llnl-dc",
+        "fullName": "Lawrence Livermore National Lab DC Office",
+        "interfaces": [
+          {
+            "device": "llnldc-rt4",
+            "interface": "ge-0/1/0.0",
+            "description": "llnldc-rt4->llnl-dc:1ge:site_conn-a_v4v6:show:intercloud"
+          },
+          {
+            "device": "llnldc-rt4",
+            "interface": "ge-0/2/0.0",
+            "description": "llnldc-rt4->lanl-dc:1ge:site_conn-a_v4:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "lns",
+        "fullName": "MIT Laboratory for Nuclear Science",
+        "interfaces": [
+          {
+            "device": "bost-cr5",
+            "interface": "to_lns_ip-a_v4",
+            "description": "bost-cr5->lns:10ge(vlan):site_conn-a_v4:show:interclo ud"
+          }
+        ]
+      },
+      {
+        "shortName": "msri",
+        "fullName": "Mathematical Sciences Research Institute",
+        "interfaces": [
+          {
+            "device": "lbl-mr2",
+            "interface": "ge-9/0/8.0",
+            "description": "lbl-mr2->msri:ge:site-ex:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "nersc",
+        "fullName": "National Energy Research Scientific Computing Center",
+        "interfaces": [
+          {
+            "device": "nersc-mr2",
+            "interface": "xe-0/1/0.1111",
+            "description": "nersc-mr2->nersc-site:10ge:site-ex:show:intercloud"
+          },
+          {
+            "device": "nersc-mr2",
+            "interface": "xe-0/2/0.1113",
+            "description": "nersc-mr2->nersc(as2936):ge:site-ex:show:intercloud"
+          },
+          {
+            "device": "nersc-mr2",
+            "interface": "xe-7/1/0.303",
+            "description": "nersc-mr2->nersc-site:10ge:sdn-a:show:intercloud"
+          },
+          {
+            "device": "sunn-cr5",
+            "interface": "to_nersc_ip-a",
+            "description": "sunn-cr5->nersc(as2936):100ge:site-ex:show:intercloud"
+          },
+          {
+            "device": "sunn-cr5",
+            "interface": "to_nersc_ip-a_v6",
+            "description": "sunn-cr5->nersc(as2936):100ge:site-ex-v6:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "nga",
+        "fullName": "National Geospatial-Intelligence Agency",
+        "interfaces": [
+          {
+            "device": "lsvn-cr1",
+            "interface": "xe-2/0/0.501",
+            "description": "lsvn-cr1->nga:1ge:site_conn-a_v4:show:intercloud"
+          },
+          {
+            "device": "lsvn-cr1",
+            "interface": "xe-2/0/0.502",
+            "description": "lsvn-cr1->nga:1ge:site_conn-b_v4:show:intercloud"
+          },
+          {
+            "device": "snla-rt3",
+            "interface": "ge-1/1/1.0",
+            "description": "snla-rt3->nga-site:ge:nga1:show:intercloud"
+          },
+          {
+            "device": "snla-rt3",
+            "interface": "ge-1/1/2.0",
+            "description": "snla-rt3->nga-site:ge:nga2:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "nga-sw",
+        "fullName": "NGA Southwest",
+        "interfaces": [
+          {
+            "device": "denv-cr5",
+            "interface": "to_nga-sw_ip-b_v4",
+            "description": "denv-cr5->nga-sw:10ge:site_conn-b_v4:show:intercloud"
+          },
+          {
+            "device": "denv-cr5",
+            "interface": "to_nga-sw_ip-b_v6",
+            "description": "denv-cr5->nga-sw:10ge:site_conn-b_v6:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "nps",
+        "fullName": "Naval Postgraduate School",
+        "interfaces": [
+          {
+            "device": "lbl-mr2",
+            "interface": "ge-9/0/7.0",
+            "description": "lbl-mr2->nps:ge:site-ex:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "nrel",
+        "fullName": "National Renewable Energy Laboratory",
+        "interfaces": [
+          {
+            "device": "denv-cr5",
+            "interface": "to_nrel_ip-b",
+            "description": "denv-cr5->nrel(as16411):10ge:site_conn-b_v4:show:intercloud"
+          },
+          {
+            "device": "denv-cr5",
+            "interface": "to_nrel_ip-b_v6",
+            "description": "denv-cr5->nrel(as16411):10ge:site_conn-b_v6:show:intercloud"
+          },
+          {
+            "device": "denv-cr5",
+            "interface": "to_nrel_ip-c",
+            "description": "denv-cr5->nrel(as16411):10ge:site_conn-c_v4:show:intercloud"
+          },
+          {
+            "device": "denv-cr5",
+            "interface": "to_nrel_ip-c_v6",
+            "description": "denv-cr5->nrel(as16411):10ge:site_conn-c_v6:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "nso",
+        "fullName": "NSTec National Securities Technology",
+        "interfaces": [
+          {
+            "device": "lsvn-cr1",
+            "interface": "xe-2/0/0.500",
+            "description": "lsvn-cr1->nso(as11678):10ge:site_conn-a_v4:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "orau",
+        "fullName": "Oak Ridge Associated Universities",
+        "interfaces": [
+          {
+            "device": "orau-rt3",
+            "interface": "ge-0/1/0.2111",
+            "description": "orau-rt3->orau:1ge(vlan):site_conn-a_primary_v4:show:intercloud"
+          },
+          {
+            "device": "orau-rt3",
+            "interface": "ge-0/1/0.2112",
+            "description": "orau-rt3->orau:1ge(vlan):site_conn-a_primary_v6:show:intercloud"
+          },
+          {
+            "device": "orau-rt3",
+            "interface": "ge-0/2/0.2184",
+            "description": "orau-rt3->orau(as65040):1ge(vlan):site_conn-c_primary_v4:show:na"
+          },
+          {
+            "device": "orau-rt3",
+            "interface": "ge-0/2/0.2186",
+            "description": "orau-rt3->orau(as65040):1ge(vlan):site_conn-c_primary_v6:show:na"
+          },
+          {
+            "device": "osti-rt2",
+            "interface": "xe-0/0/0.2154",
+            "description": "osti-rt2->orau:ge(vlan):site_conn-b_dr_v4:show:intercloud"
+          },
+          {
+            "device": "osti-rt2",
+            "interface": "xe-0/0/0.2156",
+            "description": "osti-rt2->orau:ge(vlan):site_conn-b_dr_v6:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "ornl",
+        "fullName": "Oak Ridge National Laboratory",
+        "interfaces": [
+          {
+            "device": "ornl-cr5",
+            "interface": "6135-7_1_1-2150",
+            "description": "[PRODUCTION CIRCUIT] FNAL-ORNL SDN Collaboration"
+          },
+          {
+            "device": "ornl-cr5",
+            "interface": "to_ornl_ip-a",
+            "description": "ornl-cr5->ornl(as50):100ge:site-ex:show:intercloud"
+          },
+          {
+            "device": "ornl-cr5",
+            "interface": "to_ornl_ip-a_v6",
+            "description": "ornl-cr5->ornl(as50):100ge:site-ex-v6:show:intercloud"
+          },
+          {
+            "device": "ornl-rt4",
+            "interface": "xe-1/3/0.3810",
+            "description": "ornl-rt4->ornl(as50):10ge(vlan):site_conn-a_v4:show:intercloud"
+          },
+          {
+            "device": "ornl-rt4",
+            "interface": "xe-1/3/0.3811",
+            "description": "ornl-rt4->ornl-site(as50):10ge(vlan):site-ex-v6:show:intercloud"
+          },
+          {
+            "device": "ornl-rt4",
+            "interface": "xe-2/1/0.3812",
+            "description": "ornl-rt4->ornl(as50):10ge(vlan):site_conn-c_v4:show:intercloud"
+          },
+          {
+            "device": "ornl-rt4",
+            "interface": "xe-2/1/0.3813",
+            "description": "ornl-rt4->ornl(as50):10ge(vlan):site_conn-c_v6:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "osti",
+        "fullName": "Office of Scientific and Technical Information",
+        "interfaces": [
+          {
+            "device": "ornl-rt4",
+            "interface": "xe-2/3/0.2118",
+            "description": "ornl-rt4->osti-dr:ge(vlan):site-ex:show:intercloud"
+          },
+          {
+            "device": "osti-rt2",
+            "interface": "xe-0/0/0.49",
+            "description": "osti-rt2->osti:ge(vlan):site-ex:show:intercloud"
+          },
+          {
+            "device": "osti-rt2",
+            "interface": "xe-0/0/0.55",
+            "description": "osti-rt2->osti:ge(vlan):securenet:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "pantex",
+        "fullName": "Pantex Plant",
+        "interfaces": [
+          {
+            "device": "pantex-rt2",
+            "interface": "ge-0/1/0.10",
+            "description": "pantex-rt2->pantex:1ge:site_conn-a_primary_v4:show:intercloud"
+          },
+          {
+            "device": "pantex-rt2",
+            "interface": "ge-0/1/0.16",
+            "description": "pantex-rt2->pantex:1ge:site_conn-a_primary-v6:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "pnnl",
+        "fullName": "Pacific Northwest National Laboratory",
+        "interfaces": [
+          {
+            "device": "bois-cr1",
+            "interface": "xe-0/1/0.964",
+            "description": "bois-cr1->pnnl(as3428):10ge(vlan):ipv6:show:intercloud"
+          },
+          {
+            "device": "bois-cr1",
+            "interface": "xe-0/1/0.994",
+            "description": "bois-cr1->pnnl(as3428):10ge(vlan):site-ex:show:intercloud"
+          },
+          {
+            "device": "osti-rt2",
+            "interface": "xe-0/0/0.2180",
+            "description": "osti-rt2->pnnl:fe:site-ex:show:interc"
+          },
+          {
+            "device": "pnwg-cr5",
+            "interface": "to_pnnl_ip-a-v4",
+            "description": "pnwg-cr5->pnnl(as3428):10ge(vlan):site-ex:show:intercloud"
+          },
+          {
+            "device": "pnwg-cr5",
+            "interface": "to_pnnl_ip-a-v6",
+            "description": "pnwg-cr5->pnnl(as3428):10ge(vlan):site-ex-ipv6:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "pppl",
+        "fullName": "Princeton Plasma Physics Laboratory",
+        "interfaces": [
+          {
+            "device": "pppl-rt5",
+            "interface": "xe-1/1/0.10",
+            "description": "pppl-rt5->pppl:10ge:site-ex:show:intercloud"
+          },
+          {
+            "device": "pppl-rt5",
+            "interface": "xe-1/1/0.11",
+            "description": "pppl-rt5->pppl:10ge:site-ex-v6:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "psfc",
+        "fullName": "MIT Plasma Science & Fusion Center",
+        "interfaces": [
+          {
+            "device": "bost-cr5",
+            "interface": "to_psfc_ip-a_v4v6",
+            "description": "bost-cr5->psfc:10ge(vlan):site_conn-a_v4v6:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "slac",
+        "fullName": "SLAC National Accelerator Laboratory",
+        "interfaces": [
+          {
+            "device": "slac-mr2",
+            "interface": "xe-0/1/0.1127",
+            "description": "slac-mr2->slac(as3671):10ge(vlan):site-ex-ipv6:show:intercloud"
+          },
+          {
+            "device": "slac-mr2",
+            "interface": "xe-0/1/0.1132",
+            "description": "slac-mr2->slac(as3671):10ge(vlan):site-ex:show:intercloud"
+          },
+          {
+            "device": "sunn-cr5",
+            "interface": "111-8_2_1-2202",
+            "description": "sunn-cr5->slac(as3671):100ge(vlan):site_conn-c_vrf-lhcone:show:intercloud"
+          },
+          {
+            "device": "sunn-cr5",
+            "interface": "6120-8_2_1-1700",
+            "description": "[PRODUCTION CIRCUIT] SLAC latency loop - 1 of 2 - OVERRIDE - VLAN 1700"
+          },
+          {
+            "device": "sunn-cr5",
+            "interface": "6137-8_2_1-1701",
+            "description": "[PRODUCTION CIRCUIT] SLAC latency loop - 2 of 2 - OVERRIDE - VLAN 1701"
+          },
+          {
+            "device": "sunn-cr5",
+            "interface": "to_slac_ip-c",
+            "description": "sunn-cr5->slac(as3671):100ge(vlan):site_conn-c_v4:s"
+          },
+          {
+            "device": "sunn-cr5",
+            "interface": "to_slac_ip-c_v6",
+            "description": "sunn-cr5->slac(as3671):100ge(vlan):site_conn-c_v6:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "snla",
+        "fullName": "Sandia National Laboratory Albuquerque",
+        "interfaces": [
+          {
+            "device": "snla-rt3",
+            "interface": "xe-0/0/0.1155",
+            "description": "snla-rt3->snla(as377):ge:site-ex:show:intercloud"
+          },
+          {
+            "device": "snla-rt3",
+            "interface": "xe-0/0/0.1156",
+            "description": "snla-rt3->snla(as377):ge:site-ex-v6:show:intercloud"
+          },
+          {
+            "device": "snll-mr2",
+            "interface": "xe-0/2/0.1150",
+            "description": "snll-mr2->snla-discom(as377):ge:site-ex:show:intercloud"
+          },
+          {
+            "device": "snll-mr2",
+            "interface": "xe-0/2/0.1152",
+            "description": "snll-mr2->snla-discom(as377):ge:site-ex-v6:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "snll",
+        "fullName": "Sandia National Laboratory Livermore",
+        "interfaces": [
+          {
+            "device": "llnl-mr2",
+            "interface": "xe-1/1/0.0",
+            "description": "llnl-mr2->snll-backup(as3562):ge:site-ex:show:intercloud"
+          },
+          {
+            "device": "snla-rt3",
+            "interface": "xe-0/0/0.1151",
+            "description": "snla-rt3->snll-backup(as3562):discom:site-ex:show:intercloud"
+          },
+          {
+            "device": "snll-mr2",
+            "interface": "xe-0/1/0.0",
+            "description": "snll-mr2->snll(as3562):10ge:site-ex:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "srs",
+        "fullName": "Savannah River Site",
+        "interfaces": [
+          {
+            "device": "srs-rt3",
+            "interface": "ge-0/0/0.661",
+            "description": "srs-rt3->srs(as54297):1ge(vlan):site_conn-a_v4:show:intercloud"
+          },
+          {
+            "device": "srs-rt3",
+            "interface": "ge-0/0/0.662",
+            "description": "srs-rt3->srs(as54297):1ge(vlan):site_conn-a_secondary_v4:show:intercloud"
+          },
+          {
+            "device": "srs-rt3",
+            "interface": "ge-0/0/0.663",
+            "description": "srs-rt3->srs(as54297):1ge(vlan):site_conn-a_v6:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "srs-em",
+        "fullName": "DOE Office of Environmental Management at Savannah River",
+        "interfaces": [
+          {
+            "device": "srs-rt2",
+            "interface": "fe-0/3/3.0",
+            "description": "srs-rt2->srs-em:ether:site-ex:show:intercloud"
+          }
+        ]
+      },
+      {
+        "shortName": "y12",
+        "fullName": "Y-12 National Security Complex",
+        "interfaces": [
+          {
+            "device": "ornl-rt4",
+            "interface": "xe-2/3/0.2116",
+            "description": "ornl-rt4->y12:ge(vlan):site-ex:show:intercloud"
+          }
+        ]
+      }
+    ]
+  }
+}

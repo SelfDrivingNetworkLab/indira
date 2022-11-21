@@ -1,0 +1,41 @@
+{
+	"service":[
+	{
+		"name":"CONNECT",
+		"args":"EPS"
+	},
+	{
+		"name":"DISCONNECT",
+		"args":"EPS"
+	},
+	{
+		"name":"TAP",
+		"args":"EPS"
+	},
+	{
+		"name":"VLAN",
+		"args":"INTEGER"
+	},
+	{
+		"name":"CONDITION",
+		"args":"STRING"
+	},
+	{
+		"name": "SCHEDULESTART",
+		"start" : "VALUE"
+	},
+	{
+		"name": "SCHEDULEDURATION",
+		"duration" : "VALUE"
+	},
+	{
+		"name": "SCHEDULESTOP",
+		"deadline" : "VALUE"
+	},
+	{
+		"name": "FOR",
+		"profile" : "STRING"
+	}
+	]
+
+}

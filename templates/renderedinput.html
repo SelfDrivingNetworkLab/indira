@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+		<html>
+		<head>
+		<title>Rendered Intent</title>
+		<meta name="description" content="A concept map diagram ." />
+		<meta charset="UTF-8">
+		<script src="go.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gojs/1.6.7/go-debug.js"></script>
+
+		<link href="../assets/css/goSamples.css" rel="stylesheet" type="text/css" />  
+		<script src="goSamples.js"></script>  
+		<script id="code">
+		function init() {
+		if (window.goSamples) goSamples();  // init for these samples -- you don't need to call this
+		var $ = go.GraphObject.make;  // for conciseness in defining templates
+		myDiagram =
+		$(go.Diagram, "myDiagramDiv",  // must name or refer to the DIV HTML element
+			{
+
+			initialAutoScale: go.Diagram.Uniform,  // an initial automatic zoom-to-fit
+
+			contentAlignment: go.Spot.Center,  // align document to the center of the viewport
+
+			layout:
+
+			$(go.ForceDirectedLayout,  // automatically spread nodes apart
+
+				{ defaultSpringLength: 30, defaultElectricalCharge: 100 })
+
+			});
+
+		// define each Node's appearance
+
+		myDiagram.nodeTemplate =
+		$(go.Node, "Auto",  // the whole node panel
+			{ locationSpot: go.Spot.Center },
+			// define the node's outer shape, which will surround the TextBlock
+
+			$(go.Shape, "Rectangle",
+				{ fill: $(go.Brush, "Linear", { 0: "rgb(254, 201, 0)", 1: "rgb(254, 162, 0)" }), stroke: "black" }),
+				$(go.TextBlock, 
+				{ font: "bold 10pt helvetica, bold arial, sans-serif", margin: 4 },
+				new go.Binding("text", "text"))
+			);
+			// replace the default Link template in the linkTemplateMap
+			myDiagram.linkTemplate =
+			$(go.Link,  // the whole link panel
+				$(go.Shape,  // the link shape
+					{ stroke: "black" }),
+					$(go.Shape,  // the arrowhead
+						{ toArrow: "standard", stroke: null }),
+						$(go.Panel, "Auto",
+							$(go.Shape,  // the label background, which becomes transparent around the edges
+								{ fill: $(go.Brush, "Radial", { 0: "rgb(240, 240, 240)", 0.3: "rgb(240, 240, 240)", 1: "rgba(240, 240, 240, 0)" }),
+								stroke: null }),
+						$(go.TextBlock,  // the label text
+							{ textAlign: "center",
+							font: "10pt helvetica, arial, sans-serif",
+							stroke: "#555555", margin: 4 },
+							new go.Binding("text", "text"))
+								));
+						// create the model for the concept map
+   var nodeDataArray = [{ key:0, text: '[project1]' },{ key:1, text: 'SCHEDULESTART' },{ key:2, text: 'SCHEDULESTOP' },{ key:3, text: 'CONNECT' },{ key:4, text: '21.56.50' },{ key:5, text: '2016-11-15' },{ key:6, text: '5096' },{ key:7, text: '17.00.00' },{ key:8, text: 'GMT+0000' },{ key:9, text: '2016-11-14' },{ key:10, text: 'es.net.2013..anl-mr2.xe-9_3_0#1001' },{} ];    var linkDataArray = [{ from:0, to:1, text: 'ex:hasCondition'},{ from:1, to:4, text: 'ex:hasTime'},{ from:2, to:5, text: 'ex:hasDate'},{ from:0, to:3, text: 'ex:hasService'},{ from:0, to:6, text: 'ex:hasBandwidth'},{ from:2, to:7, text: 'ex:hasTime'},{ from:1, to:8, text: 'ex:hasZone'},{ from:0, to:2, text: 'ex:hasCondition'},{ from:1, to:9, text: 'ex:hasDate'},{ from:2, to:8, text: 'ex:hasZone'},{ from:3, to:10, text: 'ex:hasArguments'},{} ];    
+				myDiagram.model = new go.GraphLinksModel(nodeDataArray, linkDataArray);
+				}
+				</script>
+				</head>
+				<body onload="init()">
+				<div id="sample">
+				<h3>Rendered Input</h3>
+				<div id="myDiagramDiv" style="background-color: whitesmoke; border: solid 1px black; width: 100%; height: 700px"></div>
+				<p>
+				The Rendered intent created by INDIRA to call NSI. 
+				</p>
+				</div>
+				</body>
+				</html>

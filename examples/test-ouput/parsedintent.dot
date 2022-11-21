@@ -1,0 +1,21 @@
+// Parsed Intent
+digraph {
+	"['admin']" [label="['admin']"]
+	CONNECT [label=CONNECT]
+		"['admin']" -> CONNECT [label="ex:hasService" constraint=false]
+	"['admin']" [label="['admin']"]
+	bwnolimit [label=bwnolimit]
+		"['admin']" -> bwnolimit [label="ex:hasCondition" constraint=false]
+	CONNECT [label=CONNECT]
+	anl [label=anl]
+		CONNECT -> anl [label="ex:hasArguments" constraint=false]
+	CONNECT [label=CONNECT]
+	bnl [label=bnl]
+		CONNECT -> bnl [label="ex:hasArguments" constraint=false]
+	CONNECT [label=CONNECT]
+	cern [label=cern]
+		CONNECT -> cern [label="ex:hasArguments" constraint=false]
+	CONNECT [label=CONNECT]
+	lbl [label=lbl]
+		CONNECT -> lbl [label="ex:hasArguments" constraint=false]
+}

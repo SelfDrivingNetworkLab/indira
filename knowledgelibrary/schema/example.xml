@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<intent id="1"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="intent.xsd">
+  <profile>JohnSmith</profile>
+  <global>
+    <variable><name>startval</name><value>8297878789</value></variable>
+    <variable><name>stopval</name><value>8297878789</value></variable>    
+  </global>
+
+  <service>
+    <name>connect</name>
+    <endpoints>
+      <endpoint>server1</endpoint>
+      <endpoint>server2</endpoint>
+      <endpoint>server3</endpoint>
+    </endpoints>
+  </service>
+
+  <conditions>
+    
+    <condition>
+      <name>nobwconstraint</name>
+      <description>some text</desctiption>
+    </condition>
+    
+    <condition>
+      <name>schedule_duration</name>
+      <start>3089489801</start>
+      <stop>stopval</stop>
+    </condition>
+
+  </conditions>
+</intent>
+
+
+More Time condition examples:
+<condition>
+  <name>schedule_start</name>
+  <start>3089489801</start>
+  <duration>8297878789</duration>
+</condition>
+
+<condition>
+  <name>schedule_deadline</name>
+  <deadline>3089489801</deadline>
+  <duration>8297878789</duration>
+</condition>
+
+More Service condition examples:
+<condition>
+  <name>isolation</name>
+  <description>some text</description>
+</condition>
+
+<condition>
+  <name>unfriendly</name>
+   <description>some text</description>
+</condition>
+
+<condition>
+  <name>bandwidth</name>
+  <description>some text</description>
+  <operation>
+    <operand>EQ</operand>
+    <value>50</value>
+  </operation>
+</condition>

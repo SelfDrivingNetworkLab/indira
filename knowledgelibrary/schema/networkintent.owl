@@ -1,0 +1,305 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#"
+     xml:base="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:networkintent="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#hasEndpoint -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#hasEndpoint">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Endpoints"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Endpoint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#hasService -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#hasService">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Profile"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Service"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#hasUser -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#hasUser">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Service"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Profile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#uses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#uses">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Service"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Condition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#conditionname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#conditionname">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Condition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#deadline -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#deadline">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Condition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#duration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#duration">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Condition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#endpointnames -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#endpointnames"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#expertdomain -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#expertdomain"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#servicename -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#servicename">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Service"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#start -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#start">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Condition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Condition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Condition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Endpoint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Endpoint"/>
+    
+
+    <!-- http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Endpoints -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Endpoints"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Profile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Profile"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Service"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Connect -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Connect">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Service"/>
+        <servicename rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connect</servicename>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Disconnect -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Disconnect">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Service"/>
+        <servicename rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disconnect</servicename>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#HPCadmin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#HPCadmin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Profile"/>
+        <expertdomain rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></expertdomain>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Isolation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Isolation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Condition"/>
+        <conditionname rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedLong"></conditionname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#NoBWConstraint -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#NoBWConstraint">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Condition"/>
+        <conditionname rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedLong"></conditionname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Schedule_deadline -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Schedule_deadline">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Condition"/>
+        <deadline rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp"></deadline>
+        <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedLong"></duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Schedule_start -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Schedule_start">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Condition"/>
+        <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedLong"></duration>
+        <start rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp"></start>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Scientist -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Scientist">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Profile"/>
+        <expertdomain rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></expertdomain>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Unfriendly -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Unfriendly">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Condition"/>
+        <conditionname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no tcp</conditionname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#anl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#anl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Endpoint"/>
+        <endpointnames rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedLong"></endpointnames>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#lbl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#lbl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Endpoint"/>
+        <endpointnames rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedLong"></endpointnames>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Condition"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Endpoint"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Endpoints"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Profile"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mkiran/ontologies/2016/7/networkintent#Service"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

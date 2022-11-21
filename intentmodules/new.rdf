@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:ns1="ex:"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="CONNECT">
+    <ns1:hasArguments>lbl</ns1:hasArguments>
+    <ns1:hasArguments>anl</ns1:hasArguments>
+  </rdf:Description>
+  <rdf:Description rdf:about="SCHEDULESTART">
+    <ns1:hasArguments>now</ns1:hasArguments>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="['project1']">
+    <ns1:hasService>SCHEDULESTART</ns1:hasService>
+    <ns1:hasService>CONDITION</ns1:hasService>
+    <ns1:hasService>SCHEDULESTOP</ns1:hasService>
+    <ns1:hasService>CONNECT</ns1:hasService>
+  </rdf:Description>
+  <rdf:Description rdf:about="SCHEDULESTOP">
+    <ns1:hasArguments>2016-11-15-&gt;17.00.00</ns1:hasArguments>
+  </rdf:Description>
+  <rdf:Description rdf:about="CONDITION">
+    <ns1:hasArguments>bwnolimit</ns1:hasArguments>
+  </rdf:Description>
+</rdf:RDF>

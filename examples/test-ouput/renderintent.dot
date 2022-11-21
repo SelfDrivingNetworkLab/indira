@@ -1,0 +1,21 @@
+// Rendered Intent
+digraph {
+	CONNECT [label=CONNECT]
+	"urn.ogf.network.domain=es.net.node=star-cr5.port=1/2/1.link=*" [label="urn.ogf.network.domain=es.net.node=star-cr5.port=1/2/1.link=*"]
+		CONNECT -> "urn.ogf.network.domain=es.net.node=star-cr5.port=1/2/1.link=*" [label="ex:hasArguments" constraint=false]
+	"['admin']" [label="['admin']"]
+	CONNECT [label=CONNECT]
+		"['admin']" -> CONNECT [label="ex:hasService" constraint=false]
+	CONNECT [label=CONNECT]
+	"urn.ogf.network.domain=es.net.node=aofa-cr5.port=4/2/1.link=*" [label="urn.ogf.network.domain=es.net.node=aofa-cr5.port=4/2/1.link=*"]
+		CONNECT -> "urn.ogf.network.domain=es.net.node=aofa-cr5.port=4/2/1.link=*" [label="ex:hasArguments" constraint=false]
+	"['admin']" [label="['admin']"]
+	unlimited [label=unlimited]
+		"['admin']" -> unlimited [label="ex:hasBandwidth" constraint=false]
+	CONNECT [label=CONNECT]
+	"urn.ogf.network.domain=es.net.node=sunn-cr5.port=7/1/1.link=*" [label="urn.ogf.network.domain=es.net.node=sunn-cr5.port=7/1/1.link=*"]
+		CONNECT -> "urn.ogf.network.domain=es.net.node=sunn-cr5.port=7/1/1.link=*" [label="ex:hasArguments" constraint=false]
+	CONNECT [label=CONNECT]
+	"urn.ogf.network.domain=es.net.node=cern-272-cr5.port=1/2/1.link=*" [label="urn.ogf.network.domain=es.net.node=cern-272-cr5.port=1/2/1.link=*"]
+		CONNECT -> "urn.ogf.network.domain=es.net.node=cern-272-cr5.port=1/2/1.link=*" [label="ex:hasArguments" constraint=false]
+}

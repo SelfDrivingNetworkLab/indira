@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:ns1="ex:"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:nodeID="bwnolimit">
+    <ns1:hasValue>nobwlimit</ns1:hasValue>
+    <ns1:hasValue>nolimit</ns1:hasValue>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="condition">
+    <ns1:hasValue>bwnolimit</ns1:hasValue>
+    <ns1:hasValue>SCHEDULESTOP</ns1:hasValue>
+    <ns1:hasValue>SCHEDULEDURATION</ns1:hasValue>
+    <ns1:hasValue>unfriendly</ns1:hasValue>
+    <ns1:hasValue>isolation</ns1:hasValue>
+    <ns1:hasValue>SCHEDULESTART</ns1:hasValue>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="profile">
+    <ns1:hasValue>args2</ns1:hasValue>
+    <ns1:hasValue>args3</ns1:hasValue>
+    <ns1:hasValue>args</ns1:hasValue>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="unfriendly">
+    <ns1:hasValue>notcppackets</ns1:hasValue>
+    <ns1:hasValue>notcpdata</ns1:hasValue>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="IntentOWL">
+    <ns1:hasClass>bwnolimit</ns1:hasClass>
+    <ns1:hasClass>service</ns1:hasClass>
+    <ns1:hasClass>unfriendly</ns1:hasClass>
+    <ns1:hasClass>condition</ns1:hasClass>
+    <ns1:hasClass>profile</ns1:hasClass>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="service">
+    <ns1:hasValue>VLAN</ns1:hasValue>
+    <ns1:hasValue>TAP</ns1:hasValue>
+    <ns1:hasValue>DISCONNECT</ns1:hasValue>
+    <ns1:hasValue>CONNECT</ns1:hasValue>
+  </rdf:Description>
+</rdf:RDF>

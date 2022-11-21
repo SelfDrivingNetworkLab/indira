@@ -1,0 +1,24 @@
+ <html>
+    <head>
+        <title>INDIRA</title>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div id="container">
+            <div class="title">
+                <h1>INDIRA - {{name}}</h1>
+            </div>
+            <div id="content">
+                <strong>You: </strong> {{message}}
+            </div>
+            <div id="content">
+                <form method="post" action="{{ url_for('chat') }}">
+                    <input name="sid" value={{sid}} type="hidden" />
+                    <input name="name" value={{name}} type="hidden" />
+                    <label for="You">You:</label>
+                    <input type="text" name="message" /><br />
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

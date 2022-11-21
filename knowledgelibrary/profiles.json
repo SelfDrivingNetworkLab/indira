@@ -1,0 +1,38 @@
+[
+    {
+      "name":"admin",
+      "description":"Administrators",
+      "bandwidth":"unlimited",
+      "topology":"*",
+      "timezone":"UTC"
+    },
+    {
+      "name":"guest",
+      "description":"Guest profile",
+      "bandwidth":"0",
+      "topology":"*",
+      "timezone":"Europe/Berlin"
+    },
+    {
+      "name":"project1",
+      "description":"Collaborative project 1",
+      "bandwidth":"5096",
+      "topology":["anl","lbl","fnal","bnl", "cern"],
+      "timezone":"GMT"
+    },
+    {
+      "name":"project2",
+      "description":"Collaborative project 2",
+      "bandwidth":"1024",
+      "topology":["anl","lbl","oak","cern"],
+      "timezone":"US/Pacific"
+    },
+    {
+      "name":"physicistJohn",
+      "description":"Collaborative project 2",
+      "bandwidth":"5096",
+      "topology":["anl","lbl","bnl","cern"],
+      "timezone":"US/Pacific"
+    }
+]
+

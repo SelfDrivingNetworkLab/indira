@@ -1,0 +1,26 @@
+{
+  "profile": [
+    "args", "args2", "args3"
+  ],
+  "service": [
+    "CONNECT", "DISCONNECT", "TAP"
+    ],
+  "condition": [
+    "bwnolimit", "VLAN", "isolated","unfriendly","SCHEDULESTART","SCHEDULEDURATION","SCHEDULESTOP",  "start","starttime", "begin", "stop","end", "stoptime"
+    ],
+   "bwnolimit": [
+    "nobwlimit", "nolimit", "bwunlimited"
+    ],
+   "unfriendly":[
+    "notcpdata","notcppackets"
+    ],
+   "isolated":[
+    "isolation","isolate"
+    ],
+    "AFTERHOURS":[
+    "afterwork","afterwards", "after"
+    ],
+    "NOW":[
+    "present","presently"
+    ]
+}

@@ -1,0 +1,1 @@
+[{"epname1": "LBL", "epname2": "ANL", "stop": "2017-04-20->1900", "start": "2017-04-15->0900", "bandwidth": "100", "timezone": "GMT"}, {"epname1": "BNL", "epname2": "ANL", "stop": "2017-04-15->1900", "start": "2017-04-15->0900", "bandwidth": "500", "timezone": "GMT"}]

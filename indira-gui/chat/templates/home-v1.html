@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>INDIRA</title>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script type="text/javascript">
+             var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+        </script>    
+    </head>
+    <body>
+        <div id="container">
+            <div class="title">
+                <h1>Welcome to INDIRA</h1>
+                  </div>
+            <div id="content">
+             <textarea id="alltext" rows="10" cols="60">
+            <p>Starting INDIRA to talk to the Network!</p>
+        <p>***********************************</p>
+
+             <p>Hello and welcome! My name is INDIRA --Intent-based Network Deployment and Provision Renderer--</p>
+             <p>If you want to quit, just say 'quit'</p>
+             </textarea>
+             <p></p>
+
+             <input type="text" value="" id="text" style="width: 250px;" />
+<br />
+<input type="button" value="Click Me" id="button" />
+ 
+<script type=text/javascript>
+  $(function() {
+    $('a#calculate').bind('click', function() {
+      $.getJSON($SCRIPT_ROOT + '/_add_numbers', {
+        a: $('input[name="a"]').val(),
+        b: $('input[name="b"]').val()
+      }, function(data) {
+        $("#result").text(data.result);
+      });
+      return false;
+    });
+  });
+</script>
+
+<p><input type="text" size="5" name="a"/> +   <input type="text" size="5" name="b"/> =   <span id="result">?</span>
+<p><a href="#" id="calculate">calculate server side</a></p>
+
+
+   <script type="text/javascript">
+  $(function() {
+    $("#submitBtn").click(function() {
+         $.ajax({
+            type: "GET",
+            url: $SCRIPT_ROOT + "/echo/",
+            contentType: "application/json; charset=utf-8",
+            data: { echoValue: $('input[name="echoText"]').val() },
+            success: function(data) {
+                $('#echoResult').text(data.value);
+            }
+        });     
+    });
+  });
+</script>
+<strong>Enter a value to echo back:</strong>
+<input type="text" size="10" id="echoText" name="echoText">
+<button type="button" id="submitBtn" name="submitBtn">Submit via AJAX</button><br><br>
+<strong><div id="echoResult"></div></strong>
+    
+
+          
+                <strong>INDIRA: </strong>What is you username:
+                <form method="post" action="{{ url_for('login') }}">
+                  <label for="You">You:</label>
+                  <input type="text" name="name" /><br />
+                   
+                </form>
+            </div>
+        </div>
+        <script type=text/javascript src="{{url_for('static', filename='jquery.js') }}"></script>
+    </body>
+</html>
